@@ -1,0 +1,11 @@
+/node_modules
+/dist
+/coverage
+/apidoc/des
+/database/mongo/_data/
+package-lock.json
+yarn.lock
+yarn.error
+docker-compose.yml.backup
+/mock
+yarn-error.log

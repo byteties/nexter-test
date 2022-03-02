@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  node:
+    container_name: nexter
+    image: node:12.14-slim
+    user: node
+    working_dir: /usr/src/app
+    environment:
+      - NODE_ENV=dev
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - '8080:8080'
+    command: ['/bin/sh', '-c', 'npm install && npm run dev']
+
+
+networks:
+    default:
+        external:
+            name: microservicenetwork

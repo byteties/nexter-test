@@ -1,0 +1,29 @@
+{
+  "name": "nexter-service",
+  "version": "1.0.0",
+  "description": "nexter-service",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js --exec babel-node -e js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-flow": "^7.12.1",
+    "@rama41222/node-logger": "^1.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "nodemon": "^2.0.6"
+  }
+}
